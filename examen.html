@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="examen.js"></script>
+    <style>
+        .erreur { color: red;}
+    </style>
+    <title>Formulaire</title>
+</head>
+<body>
+    <div>Temps : <span id="time">10</span></div>
+    <form>
+        <p><label for="nom">Nom : </label><input type="text" name="nom"/> <span id="nom" class="erreur"></span></p>
+        <p><label for="telephone">Téléphone : <input type="text" name="telephone"/> <span id="telephone" class="erreur"></span></p>
+        <p><label for="code">Code produit : </label><input type="text" name="code"/> <span id="code" class="erreur"></span></p>
+        <p><input type="button" name="submit" value="Envoyer" onclick="verifie()"/></p>
+        <div id="message"></div>
+    </form>
+</body>
+</html>
